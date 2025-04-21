@@ -1,54 +1,46 @@
-/* Home.css */
-
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom, #f0f0f0, #ffffff);
-    color: #222;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  header {
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-  }
-  
-  header p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  section {
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 600px;
-  }
-  
-  section h2 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 10px;
-  }
-  
-  .whatsapp-float {
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    z-index: 1000;
-  }
-  
-  .whatsapp-float img {
-    height: 50px;
-    object-fit: contain;
-  }
-  
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  background: #f8f8f8;
+  color: #222;
+}
+
+.hero {
+  background: url('/img/hero.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
