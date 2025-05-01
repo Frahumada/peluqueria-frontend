@@ -6,6 +6,7 @@ body {
   border: #25D366 1px solid;
   margin: 0;
   padding: 0;
+  /* padding-top: 75px; */
   font-family: 'Segoe UI', sans-serif;
   scroll-behavior: smooth;
   background: #000000d3;
@@ -15,14 +16,14 @@ body {
 
 .hero {
   background: url('/img/hero.jpg') center/cover no-repeat;
-  height: 100vh;
+  /* height: 100vh;
   width: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   text-align: center;
-  color: white;
+  color: white; */
 }
 
 .hero-overlay {
@@ -34,7 +35,9 @@ body {
 .hero h1 {
   font-size: 3rem;
   font-family: 'Playfair Display', serif;
+  
 }
+
 
 .hero-btn {
   margin-top: 20px;
