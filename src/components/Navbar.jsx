@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top p-0">
       <div className="container p-1">
         <a className="navbar-brand" href="#inicio">Peluquería Carlos</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"

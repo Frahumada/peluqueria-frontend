@@ -1,22 +1,23 @@
-import Home from './pages/Home';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import ServicioCard from './components/ServicioCard';
-import Gallery from './components/Gallery';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import ServicioCard from "./components/ServicioCard";
+import Gallery from "./components/Gallery";
+import Contact from "./components/Contact";
+import Footer from "./components/footer";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      {/* <Home /> */}
-      <ServicioCard />
-      <Gallery />
-      <Contact />
-      <Footer />
-    </>
+    <div className="bg-dark">
+      <>
+        <Navbar />
+        <Hero />
+        <Home />
+        {/* <Gallery /> */}
+        <Contact />
+        <Footer />
+      </>
+    </div>
   );
 }
 

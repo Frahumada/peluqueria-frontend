@@ -1,24 +1,26 @@
-import './Home.css';
-import Hero from '../components/Hero';
-
+import { useEffect, useState } from 'react';
+import ServicioCard from '../components/ServicioCard';
 
 function Home() {
+  const [servicios, setServicios] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/servicios')
+      .then(r => r.json())
+      .then(setServicios)
+      .catch(console.error);
+  }, []);
+
   return (
-    <Hero/>
-    // <div className="home">
-    //   <header className="hero" id="inicio">
-    //     <div className="hero-overlay">
-    //       <h1>Peluquería Carlos</h1>
-    //       <p>Estilo clásico y atención personalizada</p>
-    //       <a href="#servicios" className="hero-btn">Ver servicios</a>
-    //     </div>
-    //   </header>
-    //   <section id="servicios" className="container">
-    //     <h2>Servicios</h2>
-    //     <p>Tarjetas de servicios van acá...</p>
-    //   </section>
-    // </div>
+    <section id="servicios" className="container p-0 text-white">
+      <h2 className="mb-1">Servicios</h2>
+      <div className="row g-0">
+        {servicios.map((s, idx) => (
+          // pasamos "invert" cuando idx es impar
+          <ServicioCard key={s._id} servicio={s} invert={idx % 2 === 1} />
+        ))}
+      </div>
+    </section>
   );
 }
-
-export default Home;
+export default Home
