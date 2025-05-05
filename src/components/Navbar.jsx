@@ -1,20 +1,47 @@
-import React from 'react';
+import React from "react";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top p-0">
-      <div className="container p-1">
-        <a className="navbar-brand" href="#inicio">Peluquería Carlos</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      aria-label="Fifth navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Peluqueria Carlos</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample05"
+          aria-controls="navbarsExample05"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item"><a className="nav-link" href="#servicios">Servicios</a></li>
-            <li className="nav-item"><a className="nav-link" href="#galeria">Galería</a></li>
-            <li className="nav-item"><a className="nav-link" href="#contacto">Contacto</a></li>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#hero">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">
+                Servicios
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                ¿Quienes somos?
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Ubicacion
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -23,3 +50,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

@@ -29,10 +29,10 @@ function ServicioCard({ servicio, invert }) {
           <h2 className="card-title text-white">{nombre}</h2>
           <p className="card-text flex-grow-1">{descripcion}</p>
           <p className="card-text mb-2">
-            <strong class='text-white'>Precio:</strong> ${precio}
+            <strong className='text-white'>Precio:</strong> ${precio}
           </p>
           <p className="card-text mb-3">
-            <strong class='text-white'>Duración:</strong> {duracion} min
+            <strong className='text-white'>Duración:</strong> {duracion} min
           </p>
           {/* <button className="btn btn-primary mt-auto">Reservar</button> */}
         </div>

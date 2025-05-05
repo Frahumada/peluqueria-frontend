@@ -1,34 +1,31 @@
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ServicioCard from "./components/ServicioCard";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/footer";
+import CanvaNavbar from "./components/canvaNavbar"
+import CanvaAbout from "./components/CanvaAbout";
+import CanvaHero from "./components/CanvaHero";
+import CanvaFeatures from "./components/CanvaFeatures";
+
+
+
+
 
 function App() {
   return (
-    <div className="bg-dark">
+    <div className="container-fluid p-0">
       <>
-        <Navbar />
-        <Hero />
-        <Home />
-        {/* <Gallery /> */}
-        <Contact />
-        <Footer />
+        <CanvaNavbar/>
+        <CanvaHero/>
+        <CanvaAbout/>
+        <CanvaFeatures/>
+        <Home/>
       </>
     </div>
   );
 }
-
-// function App() {
-//   return (
-//     <div>
-//       <Navbar/>
-//       <Home />
-//       {/* <ServicioCard/> */}
-//     </div>
-//   );
-// }
 
 export default App;
