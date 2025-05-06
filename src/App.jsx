@@ -9,6 +9,7 @@ import CanvaNavbar from "./components/canvaNavbar"
 import CanvaAbout from "./components/CanvaAbout";
 import CanvaHero from "./components/CanvaHero";
 import CanvaFeatures from "./components/CanvaFeatures";
+import Pricing from "./components/pricing";
 
 
 
@@ -22,7 +23,7 @@ function App() {
         <CanvaHero/>
         <CanvaAbout/>
         <CanvaFeatures/>
-        <Home/>
+        <Pricing/>
       </>
     </div>
   );

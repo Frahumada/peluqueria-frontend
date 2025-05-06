@@ -2,8 +2,13 @@ function CanvaHero() {
   return (
     <section>
       <div>
-        <div className="hero" id="inicio">
-          <div className="bg-light bg-opacity-25 mx-5 py-5 rounded-5">
+        <div className="hero" style={{
+            backgroundImage: `url('./img/hero.jpg')`,
+            backgroundSize: 'cover',        // ajusta el tamaño para cubrir todo el div
+            backgroundPosition: 'center',   // centra la imagen
+            backgroundRepeat: 'no-repeat',  // evita repeticiones
+          }} id="inicio">
+          <div className="bg-dark bg-opacity-75 mx-5 py-5 rounded-5" >
             <h1>ESTILO Y TRADICIÓN</h1>
             <div className="divider"></div>
             <p>
