@@ -77,8 +77,8 @@ function CanvaPricing({ price }) {
   const { nombre, descripcion, precio, duracion, imagenUrl } = price;
 
   return (
-    <div className="col-lg-4 col-md-6">
-      <div className="price-card">
+    <div className="col-lg-4 col-md-6 h-100">
+      <div className="price-card h-100">
         <div className="price-header">
           <h3>{nombre}</h3>
         </div>
@@ -94,18 +94,21 @@ function CanvaPricing({ price }) {
               Duracion: {duracion} min.
             </li>
           </ul>
+          <div>
+
           {imagenUrl && (
             <img
               src={imagenUrl}
               alt={nombre}
               className="img-fluid"
               style={{
-                width: "100%",
-                maxWidth: "100vh", // ajusta al gusto
+                height:"100%",
+                maxWidth: "50%", // ajusta al gusto
                 objectFit: "cover",
               }}
             />
           )}
+          </div>
           <a href="#cita" className="btn btn-primary w-100 mt-3">
             RESERVAR
           </a>

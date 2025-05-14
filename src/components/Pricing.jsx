@@ -5,7 +5,7 @@ function Pricing() {
   const [pricing, setpricing] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/precios")
+    fetch("/api/precios")
       .then((r) => r.json())
       .then(setpricing)
       .catch(console.error);
@@ -22,7 +22,7 @@ function Pricing() {
           <div className="divider"></div>
           <p className="text-muted">pricing de calidad a precios competitivos</p>
         </div>
-        <div className="row">
+        <div className="row" style={{height: '600px'}}>
         {pricing.map((p) => (
           <CanvaPricing key={p._id} price={p} />
         ))}

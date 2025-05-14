@@ -18,6 +18,7 @@ function CanvaFeatures () {
                                 <div className="row">
                                     <div className="col-1">
                                         <i className="fas fa-check-circle me-2" style={{ color: 'var(--primary)' }}/>
+                                        <i className="fas fa-check me-2" style={{color: 'var(--primary)'}}/>
                                     </div>
                                     <div className="col">
                                         <p className="col">Más de 20 años perfeccionando cortes masculinos</p>
