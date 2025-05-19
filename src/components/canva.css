@@ -408,7 +408,7 @@ footer {
 
 .feature-box {
     min-height: 50vh;
-    padding: 30px;
+    padding: 30px 15px;
     background-color: var(--gray);
     margin-bottom: 30px;
     border-left: 3px solid var(--primary);

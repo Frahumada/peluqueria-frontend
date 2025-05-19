@@ -77,41 +77,52 @@ function CanvaPricing({ price }) {
   const { nombre, descripcion, precio, duracion, imagenUrl } = price;
 
   return (
-    <div className="col-lg-4 col-md-6 h-100">
-      <div className="price-card h-100">
+    <div className="col-md-4 d-flex">
+      <div className="price-card d-flex flex-column flex-fill">
         <div className="price-header">
           <h3>{nombre}</h3>
         </div>
-        <div className="price-body">
+        <div className="price-body flex-grow-1">
           <div className="price">Desde ${precio}</div>
-          <ul className="list-unstyled">
-            <li className="mb-3">
-            <i className="fas fa-check me-2" style={{color: 'var(--primary)'}}/>
-              {descripcion}
-            </li>
-            <li className="mb-3">
-            <i className="fas fa-check me-2" style={{color: 'var(--primary)'}}/>
-              Duracion: {duracion} min.
-            </li>
-          </ul>
+          <div className="row row-cols-2">
+            <div className="col-1">
+              <i className="fas fa-check me-2" style={{color: 'var(--primary)'}}/>
+            </div>
+            <div className="col-10">
+              <p>
+                {descripcion}
+              </p>
+            </div>
+          </div>
+          <div className="row row-cols-2">
+            <div className="col-1">
+              <i className="fas fa-check me-2" style={{color: 'var(--primary)'}}/>
+            </div>
+            <div className="col-10">
+              <p>
+                Duracion: {duracion} min.
+              </p>
+            </div>
+          </div>
+
           <div>
 
           {imagenUrl && (
             <img
               src={imagenUrl}
               alt={nombre}
-              className="img-fluid"
+              className="ratio ratio-4x3 mb-3"
               style={{
-                height:"100%",
-                maxWidth: "50%", // ajusta al gusto
                 objectFit: "cover",
               }}
             />
           )}
           </div>
-          <a href="#cita" className="btn btn-primary w-100 mt-3">
-            RESERVAR
-          </a>
+          <div className="price-footer mt-3">
+            <a href="#cita" className="btn btn-primary w-100 mt-3">
+              RESERVAR
+            </a>
+          </div>
         </div>
       </div>
     </div>

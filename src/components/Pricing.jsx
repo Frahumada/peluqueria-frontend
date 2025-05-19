@@ -22,7 +22,7 @@ function Pricing() {
           <div className="divider"></div>
           <p className="text-muted">pricing de calidad a precios competitivos</p>
         </div>
-        <div className="row" style={{height: '600px'}}>
+        <div className="row container g-4 align-items-stretch">
         {pricing.map((p) => (
           <CanvaPricing key={p._id} price={p} />
         ))}
